@@ -15,15 +15,18 @@ body{
     min-height: 100vh;
     padding: 50px;
 }
+
 .container.show-nav{
     transform: rotate(-20deg);
 }
+
 .circle-container{
     position: fixed;
     top: -100px;
     left:-100px;
 
 }
+
 .circle{
     background-color: #ff7979;
     height: 200px;
@@ -31,12 +34,12 @@ body{
     border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
-
 }
+
 .container.show-nav .circle{
     transform: rotate(-70deg);
-
 }
+
 .circle button{
     cursor: pointer;
     position: absolute;
@@ -50,17 +53,19 @@ body{
 }
 .circle button:focus{
     outline: none;
-
 }
+
 .circle button#open{
     left: 60%;
 }
+
 .circle button#close{
     top: 60%;
     /* left: 70%; */
     transform: rotate(90deg);
     transform-origin: top left;
 }
+
 .container.show-nav + nav li{
     transform: translateX(0);
     transition-delay: 0.03s;
@@ -71,13 +76,13 @@ nav{
     bottom: 40px;
     left: 0;
     z-index: 100;
-
 }
+
 nav ul{
     list-style-type: none;
     padding-left: 30px;
-
 }
+
 nav ul li{
     text-transform: uppercase;
     color: white;
@@ -88,9 +93,9 @@ nav ul li{
 
 nav ul li+li{
     margin-left: 15px;
-    transform: translateX(-150%);
-    
+    transform: translateX(-150%); 
 }
+
 nav ul li+li+li{
     margin-left: 30px;
     transform: translateX(-200%);
@@ -99,7 +104,6 @@ nav ul li+li+li{
 nav ul li i{
     font-size: 20px;
     margin-right: 10px;
-
 }
 
 .content img{
@@ -107,18 +111,21 @@ nav ul li i{
     /* width: 100vw; */
     height: 100vh;
 }
+
 .content{
     min-width: 1000px;
     margin: 50px auto;
 }
+
 .content h1{
     margin: 0; 
 }
+
 .content small{
     color: #555;
     font-style: italic;
 }
+
 .content p{
     color: #333;line-height: 1.5;
-
 }

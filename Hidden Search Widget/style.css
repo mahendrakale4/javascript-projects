@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    /* background-color: rgb(187,214,250); */
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.search{
+    position: relative;
+    height: 80px;
+}
+
+.search .input{
+    background-color: #fff;
+    border: 50px;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.btn {
+    background-color: #fff;
+    border: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+/* used to remove outline of that box when it is in focus state */
+.btn:focus , .input:focus{
+    outline: none;
+}
+
+.search.active .input{
+    width: 300px;
+}
+
+.search.active .btn{
+    transform: translateX(298px);
+}
