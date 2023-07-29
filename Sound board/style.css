@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppin:wght@400;700&display=swap');
+
+body{
+    font-family:  Poppin, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(161, 100, 223);
+}
+
+.btn{
+    background-color: rgb( 0,0,0,0.3);
+    padding: 20px 40px ;
+    margin: 20px ;
+    font-size: larger;
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: inherit;
+    outline: none;
+    border: 0;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    outline: 2px solid;
+} 
